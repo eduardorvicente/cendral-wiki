@@ -1,0 +1,115 @@
+site_name: La Marca de Cendral
+site_description: Compendio de los agentes de la Logia de Cendral — Pathfinder Society, Era de la Reconstrucción.
+site_author: Logia de Cendral
+# Cambia esto por la URL real cuando despliegues (ej. GitHub Pages):
+site_url: https://example.com/
+docs_dir: docs
+
+theme:
+  name: material
+  language: es
+  font:
+    text: Spectral
+    code: JetBrains Mono
+  icon:
+    logo: material/eye-outline
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.svg
+  palette:
+    # Modo oscuro (por defecto): "tinta"
+    - media: "(prefers-color-scheme: dark)"
+      scheme: cendral-ink
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a pergamino
+    # Modo claro: "pergamino"
+    - media: "(prefers-color-scheme: light)"
+      scheme: cendral-parchment
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a tinta
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tooltips
+
+extra_css:
+  - stylesheets/cendral.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - tables
+  - footnotes
+  - toc:
+      permalink: "¶"
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.smartsymbols
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.mark
+
+plugins:
+  - search:
+      lang: es
+
+extra:
+  social:
+    - icon: fontawesome/solid/dice-d20
+      link: "#"
+      name: Logia de Cendral
+  generator: false
+
+# Quita este bloque si no subes el proyecto a GitHub.
+# repo_url: https://github.com/TU_USUARIO/cendral-wiki
+# repo_name: cendral-wiki
+
+nav:
+  - Inicio: index.md
+  - La Marca:
+      - la-marca/index.md
+      - Geografía y zonas: la-marca/geografia.md
+      - Vida en la Marca: la-marca/vida.md
+      - Peligros y consejos: la-marca/peligros.md
+      - Glosario: la-marca/glosario.md
+      - Clima: clima/index.md
+  - Cendral:
+      - cendral/index.md
+      - Lugares y servicios: cendral/lugares.md
+  - Agos: agos/index.md
+  - Veira: veira/index.md
+  - La Logia:
+      - logia/index.md
+      - Crear tu agente: logia/crear-agente.md
+  - Personas:
+      - personas/index.md
+      - Soren Vals: personas/soren-vals.md
+      - Aldric Vane: personas/aldric-vane.md
+      - Mira Solant: personas/mira-solant.md
+      - Torvald Esh: personas/torvald-esh.md
+      - Brek: personas/brek.md
+      - Maren: personas/maren.md
+      - Dunna: personas/dunna.md
+      - Sela: personas/sela.md
+      - Sera Malt: personas/sera-malt.md
+      - Hennek Pell: personas/hennek-pell.md
+      - Lena y Tomas Var: personas/lena-tomas-var.md
+      - Hadric: personas/hadric.md
+      - Mira la Vieja: personas/mira-la-vieja.md

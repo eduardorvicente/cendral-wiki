@@ -1,0 +1,205 @@
+/* =========================================================================
+   La Marca de Cendral — tema "tinta y bronce"
+   ========================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&display=swap');
+
+/* ---------- MODO OSCURO: "tinta" ---------- */
+[data-md-color-scheme="cendral-ink"] {
+  --md-hue: 210;
+
+  --md-primary-fg-color:        #c79b54;  /* bronce */
+  --md-primary-fg-color--light: #d8b677;
+  --md-primary-fg-color--dark:  #9a753a;
+  --md-primary-bg-color:        #11161c;
+  --md-primary-bg-color--light: #11161c;
+
+  --md-accent-fg-color:             #5fb0a8;  /* verdín costero */
+  --md-accent-fg-color--transparent: #5fb0a81a;
+  --md-accent-bg-color:             #0c1117;
+  --md-accent-bg-color--light:      #0c1117;
+
+  --md-default-fg-color:          rgba(232, 226, 213, 0.92);
+  --md-default-fg-color--light:   rgba(232, 226, 213, 0.62);
+  --md-default-fg-color--lighter: rgba(232, 226, 213, 0.34);
+  --md-default-fg-color--lightest:rgba(232, 226, 213, 0.12);
+  --md-default-bg-color:          #0d1218;
+  --md-default-bg-color--light:   rgba(13, 18, 24, 0.7);
+  --md-default-bg-color--lighter: rgba(13, 18, 24, 0.45);
+  --md-default-bg-color--lightest:rgba(13, 18, 24, 0.07);
+
+  --md-code-fg-color: #d8b677;
+  --md-code-bg-color: #161d26;
+
+  --md-typeset-color:   var(--md-default-fg-color);
+  --md-typeset-a-color: #d8b677;
+  --md-typeset-mark-color: rgba(199, 155, 84, 0.28);
+
+  --md-footer-bg-color:       #090d12;
+  --md-footer-bg-color--dark: #06090c;
+  --md-footer-fg-color:       rgba(232, 226, 213, 0.85);
+  --md-footer-fg-color--light:rgba(232, 226, 213, 0.5);
+
+  --cendral-rule: rgba(199, 155, 84, 0.35);
+  --cendral-panel: #131a22;
+  color-scheme: dark;
+}
+
+/* ---------- MODO CLARO: "pergamino" ---------- */
+[data-md-color-scheme="cendral-parchment"] {
+  --md-primary-fg-color:        #6e4a1f;  /* tinta sepia */
+  --md-primary-fg-color--light: #8a6334;
+  --md-primary-fg-color--dark:  #4f3414;
+  --md-primary-bg-color:        #f4ecd8;
+  --md-primary-bg-color--light: #f4ecd8;
+
+  --md-accent-fg-color:             #2f6f68;
+  --md-accent-fg-color--transparent: #2f6f681a;
+  --md-accent-bg-color:             #f4ecd8;
+  --md-accent-bg-color--light:      #f4ecd8;
+
+  --md-default-fg-color:          #2c2417;
+  --md-default-fg-color--light:   rgba(44, 36, 23, 0.66);
+  --md-default-fg-color--lighter: rgba(44, 36, 23, 0.36);
+  --md-default-fg-color--lightest:rgba(44, 36, 23, 0.12);
+  --md-default-bg-color:          #f6efdd;
+  --md-default-bg-color--light:   rgba(246, 239, 221, 0.7);
+  --md-default-bg-color--lighter: rgba(246, 239, 221, 0.45);
+  --md-default-bg-color--lightest:rgba(246, 239, 221, 0.07);
+
+  --md-code-fg-color: #6e4a1f;
+  --md-code-bg-color: #ece1c6;
+
+  --md-typeset-color:   var(--md-default-fg-color);
+  --md-typeset-a-color: #7a4a17;
+
+  --md-footer-bg-color:       #2c2417;
+  --md-footer-bg-color--dark: #211b11;
+  --md-footer-fg-color:       rgba(246, 239, 221, 0.9);
+
+  --cendral-rule: rgba(110, 74, 31, 0.3);
+  --cendral-panel: #efe5cc;
+  color-scheme: light;
+}
+
+/* ---------- Tipografía de inscripción para títulos ---------- */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-header__title,
+.md-nav__title,
+.cendral-hero__title {
+  font-family: "Marcellus", "Spectral", serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.md-typeset h1 {
+  font-family: "Marcellus SC", "Marcellus", serif;
+  letter-spacing: 0.04em;
+  color: var(--md-primary-fg-color--light);
+}
+
+.md-typeset h2 {
+  border-bottom: 1px solid var(--cendral-rule);
+  padding-bottom: 0.25rem;
+}
+
+/* Cuerpo un poco más grande y aireado para lectura larga */
+.md-typeset { font-size: 0.82rem; line-height: 1.75; }
+
+/* ---------- Atmósfera de fondo ---------- */
+[data-md-color-scheme="cendral-ink"] .md-main,
+[data-md-color-scheme="cendral-ink"] .md-container {
+  background-color: var(--md-default-bg-color);
+  background-image:
+    radial-gradient(900px 500px at 85% -10%, rgba(95, 176, 168, 0.07), transparent 60%),
+    radial-gradient(700px 400px at 5% 5%, rgba(199, 155, 84, 0.06), transparent 60%);
+}
+
+/* Cabecera con borde de bronce */
+.md-header {
+  background: linear-gradient(180deg, #0a0e13 0%, #0d1218 100%);
+  border-bottom: 1px solid var(--cendral-rule);
+}
+[data-md-color-scheme="cendral-parchment"] .md-header {
+  background: linear-gradient(180deg, #2c2417 0%, #3a2f1c 100%);
+}
+
+/* ---------- Citas estilizadas ---------- */
+.md-typeset blockquote {
+  border-left: 3px solid var(--md-primary-fg-color);
+  background: var(--md-default-bg-color--lightest);
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+}
+
+/* ---------- Reglas horizontales ornamentales ---------- */
+.md-typeset hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--cendral-rule), transparent);
+  margin: 2rem 0;
+}
+
+/* ---------- Hero de portada ---------- */
+.cendral-hero {
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem;
+  margin: -0.6rem 0 1.5rem;
+  border-bottom: 1px solid var(--cendral-rule);
+}
+.cendral-hero__eyebrow {
+  font-family: "Marcellus SC", serif;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  font-size: 0.62rem;
+  color: var(--md-accent-fg-color);
+}
+.cendral-hero__title {
+  font-family: "Marcellus SC", serif;
+  font-size: 2.6rem;
+  line-height: 1.05;
+  margin: 0.4rem 0 0.3rem;
+  color: var(--md-primary-fg-color--light);
+}
+.cendral-hero__motto {
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.95rem;
+}
+
+/* ---------- Tarjetas (grid cards nativas de Material) ---------- */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+  border: 1px solid var(--cendral-rule);
+  border-radius: 4px;
+  background: var(--cendral-panel);
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ol > li:hover {
+  transform: translateY(-2px);
+  border-color: var(--md-primary-fg-color);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.25);
+}
+.md-typeset .grid.cards > ul > li > p:first-child strong {
+  font-family: "Marcellus", serif;
+  font-size: 1.05rem;
+}
+.md-typeset .grid.cards a {
+  color: var(--md-primary-fg-color--light);
+}
+
+/* ---------- Ficha de persona (encabezado de página NPC) ---------- */
+.npc-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  padding: 0.7rem 0 0.4rem;
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid var(--cendral-rule);
+  font-size: 0.74rem;
+  color: var(--md-default-fg-color--light);
+}
+.npc-meta strong { color: var(--md-primary-fg-color--light); }
