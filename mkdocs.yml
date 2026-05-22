@@ -2,7 +2,7 @@ site_name: La Marca de Cendral
 site_description: Compendio de los agentes de la Logia de Cendral — Pathfinder Society, Era de la Reconstrucción.
 site_author: Logia de Cendral
 # Cambia esto por la URL real cuando despliegues (ej. GitHub Pages):
-site_url: https://example.com/
+site_url: https://eduardorvicente.github.io/cendral-wiki/
 docs_dir: docs
 
 theme:
@@ -78,8 +78,8 @@ extra:
   generator: false
 
 # Quita este bloque si no subes el proyecto a GitHub.
-# repo_url: https://github.com/TU_USUARIO/cendral-wiki
-# repo_name: cendral-wiki
+repo_url: https://eduardorvicente.github.io/cendral-wiki/
+repo_name: cendral-wiki
 
 nav:
   - Inicio: index.md
