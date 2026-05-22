@@ -16,18 +16,17 @@ theme:
     repo: fontawesome/brands/github
   favicon: assets/favicon.svg
   palette:
-    # Modo oscuro (por defecto): "tinta"
-    - media: "(prefers-color-scheme: dark)"
-      scheme: cendral-ink
-      toggle:
-        icon: material/weather-night
-        name: Cambiar a pergamino
-    # Modo claro: "pergamino"
-    - media: "(prefers-color-scheme: light)"
+  # Modo claro: "pergamino"
       scheme: cendral-parchment
       toggle:
         icon: material/weather-sunny
         name: Cambiar a tinta
+    # Modo oscuro (por defecto): "tinta"
+      scheme: cendral-ink
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a pergamino
+    
   features:
     - navigation.tabs
     - navigation.sections
