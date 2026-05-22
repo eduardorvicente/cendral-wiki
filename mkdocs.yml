@@ -78,7 +78,7 @@ extra:
   generator: false
 
 # Quita este bloque si no subes el proyecto a GitHub.
-repo_url: https://eduardorvicente.github.io/cendral-wiki/
+repo_url: https://github.com/eduardorvicente/cendral-wik
 repo_name: cendral-wiki
 
 nav:
