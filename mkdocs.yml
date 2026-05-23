@@ -22,10 +22,7 @@ theme:
         icon: material/weather-sunny
         name: Cambiar a tinta
     # Modo oscuro (por defecto): "tinta"
-      scheme: cendral-ink
-      toggle:
-        icon: material/weather-night
-        name: Cambiar a pergamino
+     
     
   features:
     - navigation.tabs
